@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(0deg, #A83338 0%, #ffffff 40%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    width: 90%;
+    min-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.header-container {
+    background-color: #A83338;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav {
+    justify-content: space-evenly;
+}
+
+li {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.second-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-areas:
+    "box1 box2"
+    "box3 box3"
+    "box4 box4";
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.box1 img,
+.box2 img,
+.box4 img {
+  border-radius: 30px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 10px 10px 5px rgb(216, 216, 216);
+  width: 100%;
+  height: auto;
+}
+
+.box1 {
+  grid-area: box1;
+  width: 75%;
+  height: 75%;
+}
+
+.box2 {
+  grid-area: box2;
+  width: 75%;
+  height: 75%;
+}
+
+.box3 {
+  grid-area: box3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box4 {
+  grid-area: box4;
+  text-align: center;
+}
+
+.section-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  align-items: start;
+}
+
+.tablas {
+  width: 100%;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background-color: #f8f9fa;
+}
+
+table td, table th {
+  padding: 12px;
+  border: 1px solid #dee2e6;
+}
+
+.fuente-personalizada {
+    color: white;
+}
+
+.footer-container {
+  padding: 2rem 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.subfooter-uno {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.subfooter-dos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.subfooter-dos ul {
+  padding: 0;
+  list-style: none;
+}
+
+.subfooter-dos li {
+  margin-bottom: 0.5rem;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
